@@ -12,7 +12,7 @@ const TaskList = ({ title, tasks, addTask, updateTask, deleteTask }) => {
   };
 
   return (
-    <div className="bg-gray-100 p-4 rounded-lg w-1/3">
+    <div className="mt-2 bg-blue-500 text-white px-4 py-2 rounded w-full md:w-auto">
       <h2 className="text-xl font-semibold mb-4">{title}</h2>
       <div className="space-y-2">
         {tasks.map((task) => (
@@ -29,12 +29,12 @@ const TaskList = ({ title, tasks, addTask, updateTask, deleteTask }) => {
           type="text"
           value={newTaskTitle}
           onChange={(e) => setNewTaskTitle(e.target.value)}
-          className="border rounded p-2 w-full"
+          className="border rounded p-2 w-full text-gray-800"
           placeholder="New task title"
         />
         <button
           onClick={handleAddTask}
-          className="mt-2 bg-blue-500 text-white px-4 py-2 rounded"
+          className="mt-2 bg-green-400 text-white px-4 py-2 rounded w-full md:w-auto"
         >
           Add Task
         </button>

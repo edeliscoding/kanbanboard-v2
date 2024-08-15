@@ -63,7 +63,7 @@ const KanbanBoard = () => {
   const columns = ["todo", "in-progress", "done"];
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
       {columns.map((column) => (
         <TaskList
           key={column}
